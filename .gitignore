@@ -1,0 +1,9 @@
+# node.js and VS Code settings
+node_modules
+.vscode
+
+# Build output
+dist
+
+# Windows scripts
+*.bat

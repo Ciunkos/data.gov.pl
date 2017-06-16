@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "module": "commonjs",
+        "target": "ES6",
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./",
+        "paths": {
+          "Prawo o ruchu drogowym/*": ["src/Prawo o ruchu drogowym/*"]
+        }
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

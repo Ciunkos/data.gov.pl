@@ -1,0 +1,76 @@
+{
+  "name": "data.gov.pl",
+  "version": "1.0.0",
+  "description": "Open Polish Government Data suitable in machine-readable format.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ciunkos/data.gov.pl.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack -p --config webpack.config.js --progress --colors",
+    "test": "jest --watchAll"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.26",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.24.1",
+    "d3-dsv": "^1.0.5",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-import-resolver-webpack": "^0.8.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "file-loader": "^0.11.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^20.0.4",
+    "json-loader": "^0.5.4",
+    "pdf2json": "^1.1.7",
+    "raw-loader": "^0.5.1",
+    "regenerator-runtime": "^0.10.5",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+  },
+  "jest": {
+    "modulePaths": [
+      "/src"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    },
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|txt|md)$": "<rootDir>/jest/fileTransformer.js"
+    }
+  },
+  "keywords": [
+    "open",
+    "data",
+    "data.gov",
+    "data.gov.pl",
+    "otwartedane.gov.pl",
+    "Polish"
+  ],
+  "author": "Ciunkos",
+  "license": "ISC"
+}
