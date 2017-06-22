@@ -8,7 +8,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "webpack -p --config webpack.config.js --progress --colors",
+    "start": "webpack -p --config webpack.start.config.js --progress --colors && node dist/main.js",
+    "build": "webpack -p --config webpack.config.js --progress --colors",
     "test": "jest --watchAll"
   },
   "devDependencies": {
@@ -42,6 +43,7 @@
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.1"
   },
   "jest": {
     "modulePaths": [

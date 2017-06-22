@@ -1,9 +1,10 @@
 const path = require('path')
 
-const buildPath = path.resolve(__dirname, 'lib')
+const buildPath = path.resolve(__dirname, 'dist')
 
 module.exports = {
-    entry: './src/index.js',
+    target: 'node',
+    entry: './src/main.js',
     resolve: {
         modules: [
             path.resolve(__dirname, 'src'),
@@ -11,7 +12,7 @@ module.exports = {
         ]
     },
     output: {
-        filename: 'index.js',
+        filename: 'main.js',
         path: buildPath,
         publicPath: '/'
     },
